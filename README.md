@@ -1,8 +1,12 @@
 aplicar plug-in : ' eclipse '
+
 aplicar plug-in : " eclipse-wtp '
+
 aplicar a partir de : ' vaadin.plugin '
 
+
 versão =  " 0.1-SNAPSHOT '
+
 
 repositórios {
   	mavenCentral ()
@@ -10,34 +14,45 @@ repositórios {
         url " http://files.couchbase.com/maven2/ "
     }
     maven {
+    	
     	url " http://maven.vaadin.com/vaadin-addons "	
     }
 	maven {
+		
 		url " http://support.audaxis.com/maven2/ "
 	}
 	maven {
+		
 		url " http://jrimum.org/maven/content/groups/public/ "
 	}
 	maven {
+	
 		url " https://repository.jboss.org/nexus/content/repositories/thirdparty-releases "
 	}
 	maven {
+		
 		url " https://oss.sonatype.org/content/repositories/sourceforge-releases "
 	}
 }
 	
 vaadin {
     versão ' 7.3.10 '
+    
     widgetset ' dc.framework.DCWidgetSet '
+    
    	widgetsetGenerator ' dc.framework..OptimizedConnectorBundleLoaderFactory '
+   	
     plug-in {
+    
         logToConsole verdade
     }
 }
-vaadin . gwt . jvmArgs = [ ' -Xmx1024m ' , ' -Xms256M ' , ' -XX: MaxPermSize = 512m ' ]
+vaadin . gwt . jvmArgs = [ ' -Xmx1024m ' , ' -Xms256M ' , ' -XX: MaxPermSize = 512m ' ] 
+
 vaadin . gwt . estrito = false 
  
 tarefas . withType ( Compilar ) {
+
 	opções . encoding =  " UTF-8 '
 }
 
