@@ -10,6 +10,7 @@ versão =  " 0.1-SNAPSHOT '
 
 repositórios {
   	mavenCentral ()
+  	
     maven {
         url " http://files.couchbase.com/maven2/ "
     }
