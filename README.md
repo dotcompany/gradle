@@ -14,21 +14,26 @@ repositories {
     maven {
         url "http://files.couchbase.com/maven2/"
     }
+    
     maven{
         url "http://maven.vaadin.com/vaadin-addons"
     }
+    
     maven{
         url "http://support.audaxis.com/maven2/"
     }
+    
     maven{
         url "http://jrimum.org/maven/content/groups/public/"
     }
     maven{
         url "https://repository.jboss.org/nexus/content/repositories/thirdparty-releases"
     }
+    
     maven{
         url "https://oss.sonatype.org/content/repositories/sourceforge-releases"
     }
+    
 }
 
 
