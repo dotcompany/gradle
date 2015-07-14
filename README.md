@@ -2,6 +2,7 @@ plugins {
     id "fi.jasoft.plugin.vaadin" version "0.9.8"
 }
 
+
 apply plugin: 'eclipse'
 apply plugin: 'idea'
 apply plugin: 'eclipse-wtp'
@@ -9,11 +10,13 @@ apply plugin: 'jetty'
 
 version = '0.1-SNAPSHOT'
 
+
 repositories {
     mavenCentral()
     maven {
         url "http://files.couchbase.com/maven2/"
     }
+    
     
     maven{
         url "http://maven.vaadin.com/vaadin-addons"
@@ -37,6 +40,7 @@ repositories {
 }
 
 
+
 vaadin {
     //7.5.0
     //7.3.10
@@ -46,6 +50,7 @@ vaadin {
     plugin {
         logToConsole false
     }
+    
 }
 
 vaadin.gwt.strict=true
